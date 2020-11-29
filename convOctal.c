@@ -3,7 +3,7 @@
 #include <math.h>
 
 
-
+// C'est mieux comme ça
 /*<------------------------------------------------------------------------>*/
 // fonction de conversion de l'octal vers le decimal ///
 void octalToDecimal(char nbrOctal[]){
