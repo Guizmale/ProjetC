@@ -3,6 +3,8 @@
 #include <math.h>
 
 
+//ça change
+
 
 /*<------------------------------------------------------------------------>*/
 // fonction de conversion de l'octal vers le decimal ///
@@ -113,6 +115,6 @@ void octalToBinary(char nbrOctal[]){
 // fonction de conversion de l'octal vers l'hexadecimal ///
 int octalToHexadecimal(char nbrOctal[]){
 
-    return printf("HO l'octal a l'hex a deci mal.... \n");
+    
 }
 
