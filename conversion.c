@@ -121,7 +121,8 @@ else if (baseFrom == 1 && baseTo == 3)
 
 }else if (baseFrom == 4 && baseTo == 1)
 {
-    octalToDecimal(nbrOctal);
+    printf("le nombre Octal %s converti en décimal, vaut : \n", nbrOctal);
+    printf("%d\n",octalToDecimal(nbrOctal));
 
 }else if (baseFrom == 4 && baseTo == 2)
 {

@@ -3,12 +3,72 @@
 #include <math.h>
 
 
-//ça change
+
+void decimalToHexadecimal2(int nbrDecimal){
+    int moduloNB [50];    
+    int a=0;
+    int i = 0;
+    int compteur = i;
+
+    for (int i = 0; i < 50; i++)
+    {
+        while( nbrDecimal >= 1)
+        {
+            a = nbrDecimal%16;
+            moduloNB [i]= a;
+            nbrDecimal =nbrDecimal /16;    
+            if (nbrDecimal <=16)
+            {
+                moduloNB[i+1]= nbrDecimal;
+            }    
+            i++;    
+        compteur= i;
+        } 
+    }
+
+    for (int i = compteur-1; i >=0; i--)
+    {
+        if (moduloNB[i]<10)
+        {
+            moduloNB[i]+= 48;
+        }
+         
+        if (moduloNB[i] == 10)
+        {
+            moduloNB[i]= 'A';
+        }
+        if (moduloNB[i] == 11)
+        {
+            moduloNB[i]= 'B';
+        }
+        if (moduloNB[i] == 12)
+        {
+            moduloNB[i]= 'C';
+        }
+        if (moduloNB[i] == 13)
+        {
+            moduloNB[i]= 'D';
+        }
+        if (moduloNB[i] == 14)
+        {
+            moduloNB[i]= 'E';
+        }
+        if (moduloNB[i] == 15)
+        {
+            moduloNB[i]= 'F';
+        }
+
+        printf("%c ", moduloNB[i]);
+    }
+    printf("\n");
+}
+
+
 
 
 /*<------------------------------------------------------------------------>*/
 // fonction de conversion de l'octal vers le decimal ///
-void octalToDecimal(char nbrOctal[]){
+int octalToDecimal(char nbrOctal[]){
 
     int convInt[50];
     int length = strlen(nbrOctal);
@@ -22,21 +82,14 @@ void octalToDecimal(char nbrOctal[]){
         }
     }
     
-    
-    
-printf("le nombre Octal %s converti en décimal, vaut : \n", nbrOctal);
-
-    double convOctTodec =0;
+    int convOctTodec =0;
     int compteur =0;
      for(int i = length-1; i>=0; i--){
          convOctTodec += convInt[compteur] * pow(8,i); 
          compteur++;
     }
      
-        printf("%.0lf \n\n", convOctTodec);
-     
-    
-
+        return convOctTodec;
 
 }
 // fonction de conversion de l'octal vers le binaire ///
@@ -113,8 +166,10 @@ void octalToBinary(char nbrOctal[]){
 }
 
 // fonction de conversion de l'octal vers l'hexadecimal ///
-int octalToHexadecimal(char nbrOctal[]){
+void octalToHexadecimal(char nbrOctal[]){
 
-    
+    int convTodec = octalToDecimal(nbrOctal);
+    decimalToHexadecimal2(convTodec);
+
 }
 

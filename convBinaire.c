@@ -38,6 +38,8 @@ void binaryToHexadecimal(char nbrBinary[]){
             length = i+1;   // permet de récupérer la taille du tableau correspondant au nombre binaire
         }
     } 
+
+    //pour rajouter les zéro pour avoir des paquets de 4
     if(length%4 == 3){
         for (int i = 0; i<1; i++){
             for (int i = length+1; i >=0; i--)
@@ -262,15 +264,6 @@ void binaryToOctal(char nbrBinary[]){
    }
     
 printf("\n");
-        
-
-     
-     
-    
-    
-  
-    
-
     
 }
 
