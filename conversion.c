@@ -2,10 +2,11 @@
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
-#include "convDecimal.c"
-#include "convBinaire.c"
-#include "convHexadecimal.c"
-#include "convOctal.c"
+#include "convDecimal.c"   /// inclusion du fichier comportant les fonction codant les conversions à partir de la base decimale 
+#include "convBinaire.c"  // inclusion du fichier comportant les fonction codant les conversions à partir de la base binaire 
+#include "convHexadecimal.c"  //// inclusion du fichier comportant les fonction codant les conversions à partir de la base hexadecimale 
+#include "convOctal.c"   // inclusion du fichier comportant les fonction codant les conversions à partir de la base Octale 
+
 /**
 *   Outil de conversion entre bases numeriques
 *   - decimale

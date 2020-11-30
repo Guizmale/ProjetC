@@ -3,6 +3,18 @@
 #include <math.h>
 #include <string.h>
 
+/*
+
+Page des fonction codant les conversions de nombres en base Hexadécimale vers 
+les autres bases
+
+**/
+
+
+// Fonction ré-écrite (quand j'inclue le fichier, ça entraine une erreur de rédéfinition de fonction)
+// car j'inclue le fichier où la fonction a été créée  dans le fichier conversion.c 
+// où sont exécutées toutes les fonctions ... Je suis persuadé qu'il y a une technique simple  ;) 
+// je ne l'ai pas trouvé dans le temps imparti. J'ai donc décidé de récrire les fonctions
 void decimalToOctal2(int nbrDecimal){
 
     int i = 0;
@@ -29,6 +41,8 @@ void decimalToOctal2(int nbrDecimal){
         printf("%d ", moduloNB[i]);
     }
 }
+/*=========================================================================*/
+
 
 
 

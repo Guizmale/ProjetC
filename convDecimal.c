@@ -2,6 +2,15 @@
 #include <stdlib.h>
 #include <math.h>
 
+
+/*
+
+Page des fonction codant les conversions de nombres en base décimale vers 
+les autres bases
+
+**/
+
+
 /*<------------------------------------------------------------------------>*/
 // fonction de vonversion du decimal vers le binaire ///
 void decimalToBinary(int nbrDecimal){

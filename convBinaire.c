@@ -3,6 +3,13 @@
 #include <math.h>
 
 
+/*
+
+Page des fonction codant les conversions de nombres en base Binaire vers 
+les autres bases
+
+**/
+
 
 /*<------------------------------------------------------------------------>*/
 // fonction de conversion du binaire vers le decimal ///
